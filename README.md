@@ -13,7 +13,6 @@ This project evaluates the ability of seven large language models (LLMs) to asse
 
 Each LLM was tested in both **standard** and **deep research modes**, using both **downloaded image files** and **screenshots**, for a total of **280 queries per prompt**.
 
----
 
 ## Research Questions
 1. **Authenticity**  
@@ -22,22 +21,16 @@ Each LLM was tested in both **standard** and **deep research modes**, using both
 2. **Provenance**  
    *Prompt:* *“Where was this taken? When? By whom?”*  
 
----
 
-## Dataset
-- **Images tested**: 10 photographs taken by professional photojournalists from major publications.  
-  - `images_tested.csv`
-- **Contexts**: Protests, disasters, conflicts, and events involving major public figures.  
-- **Data format**:  
-  - `responses.csv` – Contains all model outputs (240 × 2 prompts).  
-  - Metadata includes correctness and confidence of each response.  
 
----
+## [📂Dataset](https://example.com/path/to/responses.csv)
+
+
 
 ## Baseline Comparison
 As a benchmark, all 10 images were also run through **Google Reverse Image Search**, a primary tool used by visual investigators. Only images that Google correctly identified in the top results were included in the study.
 
----
+
 
 ## Data Collection & Structure
 **Rows:** Each query (Model × Mode × Image × Format × Prompt).  
@@ -52,7 +45,7 @@ As a benchmark, all 10 images were also run through **Google Reverse Image Searc
 - `certainty` (self-reported or inferred)  
 - `notes` (human review observations)  
 
----
+
 ### Column Definitions
 | Column | Description |
 |--------|-------------|
