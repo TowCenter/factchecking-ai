@@ -23,7 +23,7 @@ Each LLM was tested in both **standard** and **deep research modes**, using both
 
 
 
-## [📂Dataset](https://docs.google.com/spreadsheets/d/e/2PACX-1vQObLR46X3MqUplYiL2VRcYHmFCVbu1vVSHoKONY8q5fCApviHrLfmnzi5UojmVcSpEd9akySHj_sTa/pub?output=csv))
+## [📂Dataset](https://docs.google.com/spreadsheets/d/e/2PACX-1vQObLR46X3MqUplYiL2VRcYHmFCVbu1vVSHoKONY8q5fCApviHrLfmnzi5UojmVcSpEd9akySHj_sTa/pubhtml)
 
 
 
