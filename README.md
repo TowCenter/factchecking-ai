@@ -49,17 +49,7 @@ As a benchmark, all 10 images were also run through **Google Reverse Image Searc
 | `Location of Photograph` | Model’s identified location. |
 | `Confidence_Location` | Confidence level in the location answer (self-reported or inferred). |
 | `Correctness_Location` | Correctness of the location answer. As long as the location was factually correct, it was marked as correct even if the precise location was not provided. Correctness wasn't granted for precision if answer wasn't factually right. |
-| `Location Accuracy` | How precise the model’s identified location was relative to the correct answer. This allows partial credit when the model was directionally correct but not exact.
-| Score | Meaning |
-|-------|---------|
-| **0** | Completely wrong OR no answer provided. |
-| **1** | Correct **continent** (e.g., “Europe” when the photo was in Spain). |
-| **2** | Correct **country** (e.g., “Spain” instead of “Valencia, Spain”). |
-| **3** | Correct **state/region** (e.g., “California” instead of “Watsonville, California”). |
-| **4** | Correct **city/town** (e.g., “Valencia” instead of “Picanya, Valencia”). |
-| **5** | Correct **region/neighborhood** (e.g., “Picanya, Valencia province” for a photo taken there). |
-| **5** | **Completely correct** – the model provided the precise location, down to the correct neighborhood, city, or identifiable site. |
-|
+| `Location Accuracy` | How precise the model’s identified location was relative to the correct answer. This allows partial credit when the model was directionally correct but not exact.|
 | `Date of Photograph` | Model’s identified date. |
 | `Confidence_Date` | Confidence level in the date answer. |
 | `Correctness_Date` | Correctness of the date answer. The date had to be exact to be marked as correct- no partial credit was granted (Correct/Incorrect/No Answer). |
