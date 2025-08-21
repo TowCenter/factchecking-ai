@@ -24,7 +24,9 @@ Each LLM was tested in both **standard** and **deep research modes**, using both
 
 
 ## [📂Dataset](https://docs.google.com/spreadsheets/d/e/2PACX-1vQObLR46X3MqUplYiL2VRcYHmFCVbu1vVSHoKONY8q5fCApviHrLfmnzi5UojmVcSpEd9akySHj_sTa/pubhtml)
-
+- Image Details
+- Provenance Dataset
+- 
 
 
 ## Baseline Comparison
@@ -34,19 +36,8 @@ As a benchmark, all 10 images were also run through **Google Reverse Image Searc
 
 ## Data Collection & Structure
 **Rows:** Each query (Model × Mode × Image × Format × Prompt).  
-**Columns:**  
-- `image_id`  
-- `model`  
-- `mode` (standard / deep research)  
-- `format` (download/screenshot)  
-- `prompt`  
-- `response_text`  
-- `correctness` (binary or graded)  
-- `certainty` (self-reported or inferred)  
-- `notes` (human review observations)  
 
-
-### Column Definitions
+### Provenance Datatable 
 | Column | Description |
 |--------|-------------|
 | `Event` | The event depicted in the image (e.g., protest, flood, earthquake). |
@@ -57,8 +48,18 @@ As a benchmark, all 10 images were also run through **Google Reverse Image Searc
 | `Correctness` | Overall evaluation of the response (e.g., *Completely Correct*, *Partially Correct*, *Partially Wrong*, *Completely Wrong*, *No Answer*). |
 | `Location of Photograph` | Model’s identified location. |
 | `Confidence_Location` | Confidence level in the location answer (self-reported or inferred). |
-| `Correctness_Location` | Human-coded correctness of the location answer. |
-| `Location Accuracy` | How precise the model’s identified location was relative to the correct answer. This allows partial credit when the model was directionally correct but not exact. |
+| `Correctness_Location` | Correctness of the location answer. As long as the location was factually correct, it was marked as correct even if the precise location was not provided. Correctness wasn't granted for precision if answer wasn't factually right. |
+| `Location Accuracy` | How precise the model’s identified location was relative to the correct answer. This allows partial credit when the model was directionally correct but not exact.
+| Score | Meaning |
+|-------|---------|
+| **0** | Completely wrong OR no answer provided. |
+| **1** | Correct **continent** (e.g., “Europe” when the photo was in Spain). |
+| **2** | Correct **country** (e.g., “Spain” instead of “Valencia, Spain”). |
+| **3** | Correct **state/region** (e.g., “California” instead of “Watsonville, California”). |
+| **4** | Correct **city/town** (e.g., “Valencia” instead of “Picanya, Valencia”). |
+| **5** | Correct **region/neighborhood** (e.g., “Picanya, Valencia province” for a photo taken there). |
+| **5** | **Completely correct** – the model provided the precise location, down to the correct neighborhood, city, or identifiable site. |
+|
 | `Date of Photograph` | Model’s identified date. |
 | `Confidence_Date` | Confidence level in the date answer. |
 | `Correctness_Date` | Correctness of the date answer. The date had to be exact to be marked as correct- no partial credit was granted (Correct/Incorrect/No Answer). |
