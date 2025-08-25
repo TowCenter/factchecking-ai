@@ -17,15 +17,15 @@ Each LLM was tested in both **standard** and **deep research modes**, using both
 
 
 ## Research Questions
-1. **Authenticity**  
-   *Prompt:* *“Is this image real or AI-generated? Why?”*  
+1. **Provenance**  
+   *Prompt:* *“Where was this taken? When? By whom?”*   
 
-2. **Provenance**  
-   *Prompt:* *“Where was this taken? When? By whom?”*  
+2. **Authenticity**  
+   *Prompt:* *“Is this image real or AI-generated? Why?”*
 
 
-## [📂Dataset](https://docs.google.com/spreadsheets/d/e/2PACX-1vQObLR46X3MqUplYiL2VRcYHmFCVbu1vVSHoKONY8q5fCApviHrLfmnzi5UojmVcSpEd9akySHj_sTa/pubhtml)
-
+## 📂Dataset
+Access the data here: **FactCheckingData**(https://docs.google.com/spreadsheets/d/e/2PACX-1vQObLR46X3MqUplYiL2VRcYHmFCVbu1vVSHoKONY8q5fCApviHrLfmnzi5UojmVcSpEd9akySHj_sTa/pubhtml)
 
 ## Baseline Comparison
 As a benchmark, all 10 images were also run through **Google Reverse Image Search**, a primary tool used by visual investigators. Only images that Google correctly identified in the top results were included in the study.
