@@ -26,7 +26,8 @@ Each LLM was tested in both **standard** and **deep research modes**, using both
 
 ## 📂Dataset
 Access the data here: (https://docs.google.com/spreadsheets/d/e/2PACX-1vQObLR46X3MqUplYiL2VRcYHmFCVbu1vVSHoKONY8q5fCApviHrLfmnzi5UojmVcSpEd9akySHj_sTa/pubhtml)
-There are three tabs: 
+
+- There are three tabs: 
 1. Information about each photograph we tested with
 2. Results from the query to test provenance
 3. Results from the query to test authenticity
