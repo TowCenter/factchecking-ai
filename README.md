@@ -25,7 +25,7 @@ Each LLM was tested in both **standard** and **deep research modes**, using both
 
 
 ## 📂Dataset
-Access the data here: **FactCheckingData**(https://docs.google.com/spreadsheets/d/e/2PACX-1vQObLR46X3MqUplYiL2VRcYHmFCVbu1vVSHoKONY8q5fCApviHrLfmnzi5UojmVcSpEd9akySHj_sTa/pubhtml)
+Access the data here: (https://docs.google.com/spreadsheets/d/e/2PACX-1vQObLR46X3MqUplYiL2VRcYHmFCVbu1vVSHoKONY8q5fCApviHrLfmnzi5UojmVcSpEd9akySHj_sTa/pubhtml)
 
 ## Baseline Comparison
 As a benchmark, all 10 images were also run through **Google Reverse Image Search**, a primary tool used by visual investigators. Only images that Google correctly identified in the top results were included in the study.
